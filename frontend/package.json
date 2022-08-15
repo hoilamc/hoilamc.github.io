@@ -1,5 +1,6 @@
 {
-  "name": "react-static-example-typescript",
+  "name": "hoilamc-frontend",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "react-static start",
@@ -29,6 +30,6 @@
     "@types/webpack-env": "^1.16.0",
     "react-hot-loader": "^4.13.0",
     "serve": "^11.3.2",
-    "typescript": "^4.1.5"
+    "typescript": "^3.5.3"
   }
 }
