@@ -1,17 +1,11 @@
 ---
-title: First post
-lead: Sample post so you can see how it works
-published: 2023-11-04
-tags: [tag-001, another-sample-tag]
+title: "Absolute basic: What is a variable?"
+lead: "Absolute beginners can understand this"
+published: 2024-08-06
+tags: [absolute-basic, concepts]
 authors:
-    - name: "Jan Tesař"
-      gitHubUserName: "tesar-tech"
-      xUserName: "tesar_tech"
+    - name: "Lily Chan"
+      gitHubUserName: "hoilamc"
 ---
 
-Hi, this is a sample post with front matter (YAML) metadata. You can use Markdown to write your content.
-Also here is a sample image:
-
-![programming bug](media/programming_bug.jpg)
-
-
+(It's from Medium: https://medium.com/@lilychan1680806/absolute-basic-what-is-a-variable-8951d9ac1995)
