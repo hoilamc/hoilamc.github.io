@@ -8,8 +8,6 @@ authors:
       gitHubUserName: "hoilamc"
 ---
 
-# You belong when you do you
-
 We are making great progress in breaking stereotypes, allowing even more people to enjoy the freedom to pursue whatever they love. However, it’s not like “happily ever after” and that’s it. This is just the beginning of a new self-exploration journey for many. If you are on this journey right now, there are probably times when you find yourself standing out. That can be lonely.
 
 In this article, I hope to inspire you to be confident and comfortable in your own skin by sharing with you a bit of my own journey.
