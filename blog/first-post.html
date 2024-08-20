@@ -29,7 +29,58 @@
         <div class="grid-rows-[auto_1fr] divide-y  pb-8 divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"><dl class="pb-10 pt-6 xl:border-b  xl:pt-11 xl:border-gray-700"><dt class="sr-only">Authors</dt>
                 <dd><ul class="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8"><li class="flex items-center space-x-2"><dl class="whitespace-nowrap text-sm font-medium leading-5"><dt class="sr-only">Name</dt>
                                         <dd class="text-gray-900 dark:text-gray-100 flex gap-1 items-center">Lily Chan<a target="_blank" rel="noopener noreferrer" href="https://github.com/hoilamc" class="flex gap-1 items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 w-4 h-4 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></dd></dl></li></ul></dd></dl>
-            <div class="divide-y  divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0"><div class="prose prose-invert max-w-none pb-8 pt-10"><p>(It's from Medium: <a href="https://medium.com/@lilychan1680806/absolute-basic-what-is-a-variable-8951d9ac1995">https://medium.com/@lilychan1680806/absolute-basic-what-is-a-variable-8951d9ac1995</a>)</p>
+            <div class="divide-y  divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0"><div class="prose prose-invert max-w-none pb-8 pt-10"><p><a href="https://medium.com/@lilychan1680806/absolute-basic-what-is-a-variable-8951d9ac1995">It's also on Medium</a></p>
+<p>If you are an absolute beginner who has just started programming, welcome! Let me explain the concept of variables in the plainest English ever!</p>
+<h2 id="a-variable-is-a-bowl">A variable is a bowl</h2>
+<p>Imagine a variable to be a bowl. It is a bowl for you to put things into it, like flour and sugar.</p>
+<p>Here’s an example of how to define variables in Python:</p>
+<pre><code class="language-python">bowl1 = “flour”
+bowl2 = “sugar”
+</code></pre>
+<p><code>bowl1</code> is flour; <code>bowl2</code> is sugar.</p>
+<blockquote>
+<p><strong>Note:</strong> Variable names are case-sensitive and accept no space nor hyphens. They usually start with a lower-case letter.</p>
+</blockquote>
+<p>Now, you can use the values by telling the computer which bowl to use.</p>
+<p>For example, I would like the computer to tell me what’s inside my two bowls. To do that, I will use the <code>print()</code> method in Python.</p>
+<pre><code class="language-py">print(&quot;What's in bowl1: &quot; + bowl1)
+print(&quot;What's in bowl2: &quot; + bowl2)
+</code></pre>
+<p>Now the computer tells me: ok they are flour and sugar correspondingly.</p>
+<pre><code class="language-python-repl">&gt;&gt;&gt; print(&quot;What's in bowl1: &quot; + bowl1)
+What's in bowl1: flour
+&gt;&gt;&gt; print(&quot;What's in bowl2: &quot; + bowl2)
+What's in bowl2: sugar
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> Make sure that whenever you use the variable, you spell everything <strong>exactly the same</strong> as how it is defined. Anything like <code>Bowl1</code> , <code>bowl 1</code> or <code>BOWL1</code> would not work.</p>
+</blockquote>
+<h2 id="some-variables-are-type-specific">Some variables are type-specific</h2>
+<p>There are typed languages such as C# and TypeScript, where they are quite OCD about the types of variables.</p>
+<p>For example, ramen bowls accept ramen in it.</p>
+<p><img src="./media/ponyo.png" alt="Ramen bowl" /></p>
+<blockquote>
+<p>Ramen from Studio Ghibli — Ponyo</p>
+</blockquote>
+<p>Matcha bowls accept matcha in it.</p>
+<p><img src="./media/matcha.png" alt="Matcha bowl" /></p>
+<blockquote>
+<p>Matcha bowl from Sing Tehus. Not a sponsor.</p>
+</blockquote>
+<p>You don’t put ramen in a matcha bowl, or vice versa. It’s a crime. Don’t tell me you do it :(</p>
+<p>In C# for example, defining a variable can look like this:</p>
+<pre><code class="language-csharp">string someString = “I am some words!”;
+int anInteger = 10;
+</code></pre>
+<p>String bowls accept strings, which means words. Integer bowls accept integers, which means a complete number without any decimals.</p>
+<p>You can find all available types by searching something like “C# types” or “TypeScript types”. Then you can find all possible options in their official documentation.</p>
+<p>E.g.: C# <a href="https://medium.com/r/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdotnet%2Fcsharp%2Flanguage-reference%2Fbuiltin-types%2Fbuilt-in-types">Built-in types</a>, TypeScript <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.typescriptlang.org%2Fdocs%2Fhandbook%2Fbasic-types.html">Handbook — Basic Types</a>.</p>
+<p>What I love about using a type-specific programming language is that it tells me immediately if I make a mistake. For example, if I assign the title of an article, which will be a string (e.g.: <code>&quot;How to be good&quot;</code>), to a variable called <code>page</code>, which should be a page number (e.g.: <code>1</code>), I will see an error straight away.</p>
+<p><img src="./media/type-error.png" alt="screenshot of a type error" /></p>
+<blockquote>
+<p>Seeing a type error immediately</p>
+</blockquote>
+<p>That’s it! I think this is a lot to cover for absolute beginners, so well done! Hope you find this article helpful. Feel free to let me know if you have any questions. Happy coding!</p>
 </div>
                 <div class="pb-6 pt-6 text-sm text-gray-300"><a target="_blank" rel="noopener noreferrer" href="https://github.com/hoilamc/tree/main/Content/Blog/first-post">View on GitHub</a></div></div>
             <footer><div class=" text-sm font-medium leading-5 divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y"><div class="py-4 xl:py-8"><h2 class="text-xs uppercase tracking-wide text-gray-400">Tags</h2>
