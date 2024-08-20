@@ -6,13 +6,14 @@ module.exports = {
         ],
     theme: {
         extend: {
-            
+
             colors: {
 
-                primary: colors.violet
+                primary: colors.sky
 
             },
-        },},
+        },
+    },
     plugins: [require('@tailwindcss/typography')],
 }
 
