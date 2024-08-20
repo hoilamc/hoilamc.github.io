@@ -25,7 +25,7 @@ bowl2 = “sugar”
 
 `bowl1` is flour; `bowl2` is sugar.
 
-> **Note:** Variable names are case-sensitive and accept no space nor hyphens. They usually start with a lower-case letter.
+**Note:** Variable names are case-sensitive and accept no space nor hyphens. They usually start with a lower-case letter.
 
 Now, you can use the values by telling the computer which bowl to use.
 
@@ -45,7 +45,7 @@ What's in bowl1: flour
 What's in bowl2: sugar
 ```
 
-> **Note:** Make sure that whenever you use the variable, you spell everything **exactly the same** as how it is defined. Anything like `Bowl1` , `bowl 1` or `BOWL1` would not work.
+**Note:** Make sure that whenever you use the variable, you spell everything **exactly the same** as how it is defined. Anything like `Bowl1` , `bowl 1` or `BOWL1` would not work.
 
 ## Some variables are type-specific
 
@@ -53,13 +53,13 @@ There are typed languages such as C# and TypeScript, where they are quite OCD ab
 
 For example, ramen bowls accept ramen in it.
 
-![Ramen bowl](./media/ponyo.png)
-> Ramen from Studio Ghibli — Ponyo
+![Ramen bowl](media/ponyo.png)
+^ Ramen from Studio Ghibli — Ponyo
 
 Matcha bowls accept matcha in it.
 
-![Matcha bowl](./media/matcha.png)
-> Matcha bowl from Sing Tehus. Not a sponsor.
+![Matcha bowl](media/matcha.png)
+^ Matcha bowl from Sing Tehus. Not a sponsor.
 
 You don’t put ramen in a matcha bowl, or vice versa. It’s a crime. Don’t tell me you do it :(
 
@@ -78,7 +78,7 @@ E.g.: C# [Built-in types](https://medium.com/r/?url=https%3A%2F%2Flearn.microsof
 
 What I love about using a type-specific programming language is that it tells me immediately if I make a mistake. For example, if I assign the title of an article, which will be a string (e.g.: `"How to be good"`), to a variable called `page`, which should be a page number (e.g.: `1`), I will see an error straight away.
 
-![screenshot of a type error](./media/type-error.png)
-> Seeing a type error immediately
+![screenshot of a type error](media/type-error.png)
+^ Seeing a type error immediately
 
 That’s it! I think this is a lot to cover for absolute beginners, so well done! Hope you find this article helpful. Feel free to let me know if you have any questions. Happy coding!
