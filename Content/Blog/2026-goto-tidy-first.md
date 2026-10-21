@@ -8,55 +8,55 @@ authors:
       gitHubUserName: "hoilamc"
 ---
 
-You're under money pressure, and you still have to keep the future open. That's the theme I took away from Kent Beck's "Tidy First" workshop at GOTO 2026: design is an economic decision about *timing*, not about cleanliness.
+## The money tension
 
-The notes below follow five questions:
+We're always under money pressure: features pay the bills, and sponsors keep investing only if we keep delivering. But the invisible work (tidying, restructuring, keeping the code easy to change) is what keeps us able to experiment and deliver *next* quarter too.
 
-1. [The tension: deliver now, or invest for later?](#1-the-tension-deliver-now-or-invest-for-later)
-2. [Where does the cost actually hide?](#2-where-does-the-cost-actually-hide)
-3. [How do we invest cheaply, in tiny steps?](#3-how-do-we-invest-cheaply-in-tiny-steps)
-4. [How do we know what's worth doing?](#4-how-do-we-know-whats-worth-doing)
-5. [What does AI change?](#5-what-does-ai-change)
+So the question I took away from Kent Beck's "Tidy First" workshop at GOTO 2026 is: **when do we deliver, and when do we do the invisible work?** Being a professional in this area means having the habits and experience to balance both. We should take pride in that.
 
-🤖 marks the places where I tried to connect things to AI. They're collected in section 5.
+The notes below build up to an answer in three steps:
 
-## 1. The tension: deliver now, or invest for later?
+1. [What are we balancing?](#what-are-we-balancing): the concepts of features, futures and survival
+2. [Where does the cost hide?](#where-does-the-cost-hide): coupling and cohesion
+3. [So how do we strike the balance?](#so-how-do-we-strike-the-balance): putting the concepts to work
+4. [What does AI change?](#what-does-ai-change)
 
-*Scope: why we can't just "do the right thing" first, and why we can't just ship features forever either.*
+🤖 marks the places where I tried to connect things to AI. They're collected in the last section.
+
+## What are we balancing?
+
+As geeks, it's easy for us to over-engineer, and that burns through the patience our stakeholders have before they stop investing. But if we ignore good software practices and architectural design, our code will eventually get so smelly that we can no longer add new features.
+
+This is where Kent introduces the concept of "F v F" (Features vs. Futures).
 
 ### Features vs. futures
 
-How to match software design with an economic sense? How many things can one economically do next?
+In the chart below, the x-axis is the features we've delivered, and the y-axis is the futures (options) we still have.
 
 ![Hand-drawn graph with Features on the x-axis and Futures on the y-axis. A blue curve falls steadily as features are delivered; a black zigzag stays high by alternating feature work with work that restores futures.](media/futures-vs-features.jpg)
 
 Source: <https://newsletter.kentbeck.com/p/mathematicians-heres-a-way-to-think>
 
-Visible vs invisible, how we need invisible work in small chunks. We also need to let people keep investing into our team after all.
+The blue line shows what happens when we focus solely on delivering features: every feature moves us right, but eats into our future options, until there's nothing left.
 
-### Survival: balancing strategically
+The black line is a more sustainable approach. We balance feature delivery with small spikes of "Future" tasks, such as tidying code and improving the architecture, which forms a sawtooth shape. These tasks are often invisible: they move us up, not right. But those small spikes keep the future of our product open.
 
-> I honestly don’t remember well — was probably sleepy after lunch :(
+Of course, the opposite is also a trap. If we spend all our time doing things right, we keep moving up but never right, and people will stop investing in our team.
 
-The software should survive, meaning we encourage sponsors to invest more “money” into the project. And we do that by delivering features. It increases our Net Present Value (NPV). The other half of survival is *optionality*: keeping our future choices open.
+So we always have to ask ourselves:
+
+> *How do we match software design with an economic sense? How many things can one economically do next?*
+
+### Survival
+
+The feature we deliver increases our Net Present Value (NPV).
+The future we strive for provides *optionality*: keeping our future choices open.
 
 ![Survival splits into two branches: Net Present Value (Feature) and Optionality (Future).](media/survival-npv-optionality.png)
 
-So less design, more features at the start.
+## Where does the cost hide?
 
-But be careful not to over-investing into a project too early on!
-
-**If we want to earn more, we have to pay less.**
-(e.g.: Delivering more features without minding too much on reusability, duplication, etc. That’s when small habits count! But don’t be afraid to fail and make mistakes.)
-
-**We can earn earlier, then pay later.**
-(e.g.: After getting investment from our sponsors and proving that our features have value, we then have the optionality and can clean up the code)
-
-Like we could use a ContextProvider right from the start (see the cohesion example in section 2), then we avoid maintaining messy code later as our codebase grow, meaning we have more optionality, more freedom to do other things. But there could also a risk that it’s expensive to maintain without much usage.
-
-## 2. Where does the cost actually hide?
-
-*Scope: what makes a change expensive, and the two lenses for spotting it: coupling and cohesion.*
+So what's so hard at increasing our future? Here we need to understand what's costing most of our efforts and time -- things that are *expensive* to change, and how do we spot them -- coupling and cohesion.
 
 ### Coupling
 
@@ -66,7 +66,6 @@ I.e. Dependency when a change occurs.
 “When I change this, what other things need to be changed too?”
 
 ⚠ The “Change” event is required to trigger the propagation.
-
 💰 Because it only cost you when you make the change.
 
 Larger size of change === larger cost of change === coupling seriousness.
@@ -115,9 +114,35 @@ BRE = Beneficial Related Elements, from his *Tidy First* book.
 
 <!-- TODO: expand — my take: patterns as packaged ways to manage coupling and cohesion? -->
 
-## 3. How do we invest cheaply, in tiny steps?
+## So how do we strike the balance?
 
-*Scope: the habits and techniques that make "pay later" and "pay a little now" affordable and safe.*
+*Scope: using the concepts above to decide what to do, when, and how small.*
+
+### Earn first, pay later
+
+Survival needs both NPV and optionality, so:
+
+**If we want to earn more, we have to pay less.**
+(e.g.: Delivering more features without minding too much on reusability, duplication, etc. That’s when small habits count! But don’t be afraid to fail and make mistakes.)
+
+**We can earn earlier, then pay later.**
+(e.g.: After getting investment from our sponsors and proving that our features have value, we then have the optionality and can clean up the code)
+
+So less design, more features at the start. But be careful not to over-invest into a project too early on!
+
+Like we could use a ContextProvider right from the start (the cohesion example above), then we avoid maintaining messy code later as our codebase grow, meaning we have more optionality, more freedom to do other things. But there could also a risk that it’s expensive to maintain without much usage.
+
+### The art of waiting
+
+It’s not realistic to make things right the first time. Things are always changing anyways. Just get frequent feedback, a strong feedback loop. Small incrementals, fail fast, learn fast.
+
+💡 How do we judge if we really need to do something (e.g.: a feature, a refactor)?
+A: Experience lol
+
+1. Play and experiment with the idea
+2. Identify pattern, or have a feeling that there’s just gonna be more, then pull out a little trick from down the sleeve (future)
+
+Just make sure it’s reversible if someone is using it already.
 
 ### Little tricks down the sleeves
 
@@ -143,22 +168,6 @@ It's a technique for migration. If we want to migrate from A to B, we create an 
 
 <!-- TODO: verify the Test Desiderata wording against Kent's post before publishing -->
 
-## 4. How do we know what's worth doing?
-
-*Scope: deciding when to act, and when to wait for feedback.*
-
-### The art of waiting
-
-It’s not realistic to make things right the first time. Things are always changing anyways. Just get frequent feedback, a strong feedback loop. Small incrementals, fail fast, learn fast.
-
-💡 How do we judge if we really need to do something (e.g.: a feature, a refactor)?
-A: Experience lol
-
-1. Play and experiment with the idea
-2. Identify pattern, or have a feeling that there’s just gonna be more, then pull out a little trick from down the sleeve (future)
-
-Just make sure it’s reversible if someone is using it already.
-
 ### Grow software, don't assemble it
 
 "Empirical design": respect constraints. So just work on top of our current code. We can go fast if we understand our constraints.
@@ -169,9 +178,9 @@ Just make sure it’s reversible if someone is using it already.
 
 If you're just guessing and asking no users, that's not agile, even though you're doing daily standups!
 
-## 5. What does AI change?
+## What does AI change?
 
-*Scope: how AI sharpens the tension from section 1, and what to do about it.*
+*Scope: how AI sharpens the tension from the start, and what to do about it.*
 
 AI tends to deliver visible Features (<https://newsletter.kentbeck.com/i/216656928/genies-hate-the-invisible>), but without tidy code and expandable architecture, we’re only reducing the amount of future we could deliver — Technical Debt will increase. ⚠
 
@@ -185,9 +194,9 @@ AI tends to deliver visible Features (<https://newsletter.kentbeck.com/i/2166569
 
 <!-- TODO: expand — what does "documenting by intent" look like in our specs / prompts? -->
 
-🤖 **Tell AI what good tests look like.** Put the "test behaviors, not structure" rule from section 3 into our specs and instructions.
+🤖 **Tell AI what good tests look like.** Put the "test behaviors, not structure" rule from the testing section into our specs and instructions.
 
-🤖 **Find the espresso.** What’s the espresso for AI-written code? (See section 2.)
+🤖 **Find the espresso.** What’s the espresso for AI-written code? (See the power-law section.)
 
 ## Books
 
