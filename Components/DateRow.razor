@@ -10,8 +10,8 @@
 
     RenderFragment DateInRow(string label, DateTime date) => @<div>
             <dt class="sr-only">@label on</dt>
-            <dd class="text-base font-medium leading-6 text-gray-400">
-                <span class="mr-2 text-xs uppercase tracking-wide text-gray-500">@label</span>
+            <dd class="font-hand text-xl leading-6 text-gray-300">
+                <span class="mr-2 font-sans text-xs uppercase tracking-wide text-gray-500">@label</span>
                 <time datetime="@date.ToString("yyyy-MM-ddTHH:mm:ss.fffK", CultureInfo.InvariantCulture)">
                     @date.ToString("MMMM d, yyyy", new CultureInfo("en-US"))
                 </time>

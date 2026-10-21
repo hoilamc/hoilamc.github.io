@@ -5,24 +5,42 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <base href="/"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@@600&amp;family=Cormorant+Garamond:ital,wght@@0,600;0,700;1,500&amp;family=Nunito:wght@@400;600;700&amp;display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <script>
+        // The Learning Nook palette: every gray-* is a warm mocha, primary-* is peach/caramel.
         tailwind.config = {
             theme: {
                 extend: {
-
                     colors: {
-                        primary: tailwind.colors.violet
+                        primary: {
+                            50: '#fff6ec', 100: '#fde9d3', 200: '#f9d2aa', 300: '#f4b98a',
+                            400: '#e9a06b', 500: '#d98a52', 600: '#bc6f3c', 700: '#96552f',
+                            800: '#724027', 900: '#54301f', 950: '#36201a'
+                        },
+                        gray: {
+                            50: '#faf4ec', 100: '#f1e3d0', 200: '#e6d3bb', 300: '#d9c1a5',
+                            400: '#c2a68a', 500: '#a98c73', 600: '#7a5844', 700: '#5a4033',
+                            800: '#4a352a', 900: '#36261f', 950: '#2b1e18'
+                        }
                     },
-                },},
+                    fontFamily: {
+                        sans: ['Nunito', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        garamond: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        hand: ['Caveat', 'cursive']
+                    }
                 }
+            }
+        }
     </script>
-
+    <link rel="stylesheet" href="css/site.css"/>
 
     <HeadOutlet/>
 </head>
 
-<body class="bg-gray-950 font-sans text-gray-200">
+<body class="bg-gray-950 font-sans text-gray-200 antialiased">
 <Routes/>
 </body>
 

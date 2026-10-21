@@ -1,0 +1,37 @@
+/* The Learning Nook: touches Tailwind (CDN) can't express from class names alone. */
+
+::selection {
+    background: #7a5844;
+    color: #fff1de;
+}
+
+/* Post body (markdown rendered inside `.prose`).
+   `body .prose` out-ranks the typography plugin's own `.prose`, whichever stylesheet loads last. */
+body .prose {
+    --tw-prose-invert-headings: #fff1de;
+    --tw-prose-invert-bold: #fff1de;
+    --tw-prose-invert-links: #f4b98a;
+    --tw-prose-invert-bullets: #a98c73;
+    --tw-prose-invert-counters: #c2a68a;
+    --tw-prose-invert-quote-borders: #7a5844;
+}
+
+/* Cormorant has a small x-height, so headings are sized up to read like the Nunito body. */
+body .prose h1,
+body .prose h2,
+body .prose h3,
+body .prose h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+body .prose h2 { font-size: 1.85em; }
+body .prose h3 { font-size: 1.5em; }
+
+/* Diagrams are transparent PNGs drawn in dark ink, so give them a paper-coloured backing. */
+body .prose img {
+    background: #f6ecdc;
+    border-radius: 14px;
+    padding: 12px;
+}
