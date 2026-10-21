@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        primary: tailwind.colors.violet
+                    },
+                },},
+                }
+    </script>
+
+
+    </head>
+
+<body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-800">BlazorStatic Minimal Blog</div></div></a></div>
+    <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
+                </a><a href="tags" class="hidden font-medium text-gray-100 sm:block">Tags
+                </a><a href="https://github.com/BlazorStatic/BlazorStaticMinimalBlog" class="hidden font-medium text-gray-100 sm:block">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
+        <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
+            <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
+                            </a></div><div class="px-12 py-4"><a href="tags" class="text-2xl font-bold tracking-widest text-gray-100">Tags
+                            </a></div><div class="px-12 py-4"><a href="https://github.com/BlazorStatic/BlazorStaticMinimalBlog" class="text-2xl font-bold tracking-widest text-gray-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></div></nav></div></div></header>
+<script>
+//👎 but what can I do? It's a static html. I can't use C# here.
+ const toggleMobileMenu = () => document.querySelector('#mobile-menu').classList.toggle('translate-x-full');
+ 
+ document.querySelector('#toggle-button').addEventListener('click', toggleMobileMenu);
+ document.querySelector('#close-mobile-menu-button').addEventListener('click', toggleMobileMenu);
+</script>
+
+        <main class="mb-auto"><article><div class="xl:divide-y  xl:divide-gray-700"><header class="pt-6 xl:pb-6"><div class="space-y-1 text-center"><dl class="space-y-2"><div><dt class="sr-only">Published on</dt>
+            <dd class="text-base font-medium leading-6 text-gray-400"><span class="mr-2 text-xs uppercase tracking-wide text-gray-500">Published</span>
+                <time datetime="2026-10-20T00:00:00.000">October 20, 2026</time></dd></div></dl>
+
+                <h1 class="font-garamond md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-primary-700 sm:text-4xl sm:leading-10 md:text-6xl">Tidy First? Notes from Kent Beck&#x27;s workshop</h1></div></header>
+        <div class="grid-rows-[auto_1fr] divide-y  pb-8 divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"><dl class="pb-10 pt-6 xl:border-b  xl:pt-11 xl:border-gray-700"><dt class="sr-only">Authors</dt>
+                <dd><ul class="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8"><li class="flex items-center space-x-2"><dl class="whitespace-nowrap text-sm font-medium leading-5"><dt class="sr-only">Name</dt>
+                                        <dd class="text-gray-900 dark:text-gray-100 flex gap-1 items-center">Lily Chan<a target="_blank" rel="noopener noreferrer" href="https://github.com/hoilamc" class="flex gap-1 items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 w-4 h-4 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></dd></dl></li></ul></dd></dl>
+            <div class="divide-y  divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0"><div class="prose prose-invert max-w-none pb-8 pt-10"><p>You're under money pressure, and you still have to keep the future open. That's the theme I took away from Kent Beck's &quot;Tidy First&quot; workshop at GOTO 2026: design is an economic decision about <em>timing</em>, not about cleanliness.</p>
+<p>The notes below follow five questions:</p>
+<ol>
+<li><a href="#1-the-tension-deliver-now-or-invest-for-later">The tension: deliver now, or invest for later?</a></li>
+<li><a href="#2-where-does-the-cost-actually-hide">Where does the cost actually hide?</a></li>
+<li><a href="#3-how-do-we-invest-cheaply-in-tiny-steps">How do we invest cheaply, in tiny steps?</a></li>
+<li><a href="#4-how-do-we-know-whats-worth-doing">How do we know what's worth doing?</a></li>
+<li><a href="#5-what-does-ai-change">What does AI change?</a></li>
+</ol>
+<p>🤖 marks the places where I tried to connect things to AI. They're collected in section 5.</p>
+<h2 id="the-tension-deliver-now-or-invest-for-later">1. The tension: deliver now, or invest for later?</h2>
+<p><em>Scope: why we can't just &quot;do the right thing&quot; first, and why we can't just ship features forever either.</em></p>
+<h3 id="features-vs.futures">Features vs. futures</h3>
+<p>How to match software design with an economic sense? How many things can one economically do next?</p>
+<p><img src="Content/Blog/media/futures-vs-features.jpg" alt="Hand-drawn graph with Features on the x-axis and Futures on the y-axis. A blue curve falls steadily as features are delivered; a black zigzag stays high by alternating feature work with work that restores futures." /></p>
+<p>Source: <a href="https://newsletter.kentbeck.com/p/mathematicians-heres-a-way-to-think">https://newsletter.kentbeck.com/p/mathematicians-heres-a-way-to-think</a></p>
+<p>Visible vs invisible, how we need invisible work in small chunks. We also need to let people keep investing into our team after all.</p>
+<h3 id="survival-balancing-strategically">Survival: balancing strategically</h3>
+<blockquote>
+<p>I honestly don’t remember well — was probably sleepy after lunch :(</p>
+</blockquote>
+<p>The software should survive, meaning we encourage sponsors to invest more “money” into the project. And we do that by delivering features. It increases our Net Present Value (NPV). The other half of survival is <em>optionality</em>: keeping our future choices open.</p>
+<p><img src="Content/Blog/media/survival-npv-optionality.png" alt="Survival splits into two branches: Net Present Value (Feature) and Optionality (Future)." /></p>
+<p>So less design, more features at the start.</p>
+<p>But be careful not to over-investing into a project too early on!</p>
+<p><strong>If we want to earn more, we have to pay less.</strong>
+(e.g.: Delivering more features without minding too much on reusability, duplication, etc. That’s when small habits count! But don’t be afraid to fail and make mistakes.)</p>
+<p><strong>We can earn earlier, then pay later.</strong>
+(e.g.: After getting investment from our sponsors and proving that our features have value, we then have the optionality and can clean up the code)</p>
+<p>Like we could use a ContextProvider right from the start (see the cohesion example in section 2), then we avoid maintaining messy code later as our codebase grow, meaning we have more optionality, more freedom to do other things. But there could also a risk that it’s expensive to maintain without much usage.</p>
+<h2 id="where-does-the-cost-actually-hide">2. Where does the cost actually hide?</h2>
+<p><em>Scope: what makes a change expensive, and the two lenses for spotting it: coupling and cohesion.</em></p>
+<h3 id="coupling">Coupling</h3>
+<p>= Propagation of Change
+I.e. Dependency when a change occurs.</p>
+<p>“When I change this, what other things need to be changed too?”</p>
+<p>⚠ The “Change” event is required to trigger the propagation.</p>
+<p>💰 Because it only cost you when you make the change.</p>
+<p>Larger size of change === larger cost of change === coupling seriousness.</p>
+<p><img src="Content/Blog/media/coupling-arrows.png" alt="Tree of nodes joined by arrows, labelled &quot;Arrows: Coupling&quot;. Changing the orange node propagates along yellow arrows to the three nodes that depend on it; the black nodes are unaffected." /></p>
+<p>In Math formula, it will be COUPLE(E1, E2, Delta)</p>
+<p>💡 Is our test too coupled right now? Or can we investigate with Graphify?</p>
+<h3 id="conditions-are-power-law-distributed">Conditions are power-law distributed</h3>
+<p>This concept exists in code: 貧者越貧，富者越富。A condition on the far right are like the top of a tree — many conditions go through there first. Whilst those on the top are like special cases. One needs to pass through many conditions in order to reach there. BUT that doesn’t mean they’re not important!</p>
+<p><img src="Content/Blog/media/conditions-by-appearance.jpg" alt="Log-log scatter plot titled &quot;Conditions by Appearance&quot;: a few conditions appear many times, while the vast majority appear only once, following a power-law distribution." /></p>
+<p>Source: <a href="https://medium.com/@kentbeck_7670/conditions-are-power-law-distributed-an-example-61fa4e0d3500">https://medium.com/@kentbeck_7670/conditions-are-power-law-distributed-an-example-61fa4e0d3500</a></p>
+<p>Or, with the coffee analogy from the workshop:</p>
+<p><img src="Content/Blog/media/conditions-by-appearance-espresso.png" alt="The same &quot;Conditions by Appearance&quot; plot annotated with coffee orders: &quot;pumpkin spice maple syrup macchiato with oat milk&quot; is a one-off at the top left, while &quot;espresso&quot; is the single most frequent condition at the far right." /></p>
+<p>Key takeaways:</p>
+<ul>
+<li>Consolidation candidates / reduce duplication (Where’s our “espresso”? Air pressure, how many grams…)</li>
+<li>Test prioritization: “Which logic, if broken, breaks the most places” it’s like if the espresso is not good, then the latte won’t be good too :( (opinionated)</li>
+<li>🤖 What’s the espresso for AI? What’s a micro-structure that AI adopt when writing code? E.g.: comments and tests it generates — are they duplicates?</li>
+</ul>
+<h3 id="cohesiveness">Cohesiveness</h3>
+<p>So the previous one (coupling) is about consolidating separate functions into one. This one is about putting things of the same / similar context into the same place — the same plugin, folder, or even file.</p>
+<p>Why? Because when we need to change, there’s less risk that we forget to change other related things.</p>
+<p>ContextProvider lol</p>
+<p><img src="Content/Blog/media/cohesion-context-provider.png" alt="Two dependency trees for updating a field value. Left: changing the field in the side panel propagates through the side panel and overview tab down to Card A's updated value. Right: both the change and the update go through a shared ContextProvider instead." /></p>
+<h3 id="beneficial-relationships-bre">Beneficial Relationships (BRE)</h3>
+<p>BRE = Beneficial Related Elements, from his <em>Tidy First</em> book.</p>
+<!-- TODO: expand — what is a "beneficial" relationship vs. a harmful one? -->
+<h3 id="why-are-design-patterns-used">Why are design patterns used?</h3>
+<!-- TODO: expand — my take: patterns as packaged ways to manage coupling and cohesion? -->
+<h2 id="how-do-we-invest-cheaply-in-tiny-steps">3. How do we invest cheaply, in tiny steps?</h2>
+<p><em>Scope: the habits and techniques that make &quot;pay later&quot; and &quot;pay a little now&quot; affordable and safe.</em></p>
+<h3 id="little-tricks-down-the-sleeves">Little tricks down the sleeves</h3>
+<p>They are small habits like how chefs wipe their knives after every cut. As professional software engineers, we need to have different little tricks ready down our sleeves. We don’t need to use them all the time, but we need to have them ready when needed.</p>
+<p>It helps us balance between “Feature: Delivering” and “Future: Addressing Technical Debt”.</p>
+<p>Archi-tasks should be small habits. Small jumps, so we don’t need to justify them — then no one would notice.</p>
+<h3 id="parallel-migrate-without-a-big-bang">Parallel: migrate without a big bang</h3>
+<p>It's a technique for migration. If we want to migrate from A to B, we create an &quot;AB&quot; form so that both can coexist at the same time. Then we can gradually update, without a big bang.</p>
+<h3 id="trade-duplication-for-always-on-safety">Trade duplication for always-on + safety</h3>
+<!-- TODO: expand — what exactly is the trade? (duplication in exchange for the old path staying live and safe?) -->
+<h3 id="tests-cover-behavior-not-100">Tests: cover behavior, not 100%</h3>
+<ul>
+<li>Tests should cover <em>behavioral</em> changes (BDD?).</li>
+<li>Test coverage doesn't need to be 100%.</li>
+<li>💡 A thought while listening: maybe we should write it into our spec / instructions / existing code that tests should only test behaviors, and follow the <em>desiderata</em>. (Kent Beck's &quot;Test Desiderata&quot; is a list of properties good tests should have, including &quot;behavioral&quot; and &quot;structure-insensitive&quot;.)</li>
+</ul>
+<!-- TODO: verify the Test Desiderata wording against Kent's post before publishing -->
+<h2 id="how-do-we-know-whats-worth-doing">4. How do we know what's worth doing?</h2>
+<p><em>Scope: deciding when to act, and when to wait for feedback.</em></p>
+<h3 id="the-art-of-waiting">The art of waiting</h3>
+<p>It’s not realistic to make things right the first time. Things are always changing anyways. Just get frequent feedback, a strong feedback loop. Small incrementals, fail fast, learn fast.</p>
+<p>💡 How do we judge if we really need to do something (e.g.: a feature, a refactor)?
+A: Experience lol</p>
+<ol>
+<li>Play and experiment with the idea</li>
+<li>Identify pattern, or have a feeling that there’s just gonna be more, then pull out a little trick from down the sleeve (future)</li>
+</ol>
+<p>Just make sure it’s reversible if someone is using it already.</p>
+<h3 id="grow-software-dont-assemble-it">Grow software, don't assemble it</h3>
+<p>&quot;Empirical design&quot;: respect constraints. So just work on top of our current code. We can go fast if we understand our constraints.</p>
+<h3 id="extreme-programming">Extreme Programming</h3>
+<!-- TODO: expand — what did Kent say about XP at the workshop? -->
+<p>If you're just guessing and asking no users, that's not agile, even though you're doing daily standups!</p>
+<h2 id="what-does-ai-change">5. What does AI change?</h2>
+<p><em>Scope: how AI sharpens the tension from section 1, and what to do about it.</em></p>
+<p>AI tends to deliver visible Features (<a href="https://newsletter.kentbeck.com/i/216656928/genies-hate-the-invisible">https://newsletter.kentbeck.com/i/216656928/genies-hate-the-invisible</a>), but without tidy code and expandable architecture, we’re only reducing the amount of future we could deliver — Technical Debt will increase. ⚠</p>
+<p>🤖 <strong>We're not learning anymore.</strong> With AI, we’re not learning about our code and the art of software engineering anymore, so our need isn’t met! (^ Kent’s opinion)</p>
+<p><img src="Content/Blog/media/problem-struggle-insight-solve.png" alt="Flow from Problem to Struggle to (Aha!) Insight to Solve. The insight step is marked &quot;went missing :(&quot;, and a blue arrow shows AI bringing us from Problem straight to Solve." /></p>
+<p>🤖 <strong>Use AI for optionality, not just output.</strong> So maybe use AI for experimenting alternatives and learning (optionality), not shipping more code.</p>
+<p>🤖 <strong>Document by intent, not implementation.</strong> Maybe this can give us insight on how to use AI more effectively today.</p>
+<!-- TODO: expand — what does "documenting by intent" look like in our specs / prompts? -->
+<p>🤖 <strong>Tell AI what good tests look like.</strong> Put the &quot;test behaviors, not structure&quot; rule from section 3 into our specs and instructions.</p>
+<p>🤖 <strong>Find the espresso.</strong> What’s the espresso for AI-written code? (See section 2.)</p>
+<h2 id="books">Books</h2>
+<ul>
+<li>Structured Design: <a href="https://vtda.org/books/Computing/Programming/StructuredDesign_EdwardYourdonLarryConstantine.pdf">https://vtda.org/books/Computing/Programming/StructuredDesign_EdwardYourdonLarryConstantine.pdf</a></li>
+<li>Tidy First: <a href="https://www.oreilly.com/library/view/tidy-first/9781098151232/">https://www.oreilly.com/library/view/tidy-first/9781098151232/</a></li>
+</ul>
+</div>
+                <div class="pb-6 pt-6 text-sm text-gray-300"><a target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/BlazorStaticMinimalBlog/tree/main/Content/Blog/2026-goto-tidy-first">View on GitHub</a></div></div>
+            <footer><div class=" text-sm font-medium leading-5 divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y"><div class="py-4 xl:py-8"><h2 class="text-xs uppercase tracking-wide text-gray-400">Tags</h2>
+                        <div class="flex flex-wrap "><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/tidy-first">tidy-first</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/kent-beck">kent-beck</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/goto-2026">goto-2026</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/software-design">software-design</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/refactoring">refactoring</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/testing">testing</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/agile">agile</a><a class="text-primary-600 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/ai">ai</a></div></div></div>
+                <div class="pt-4 xl:pt-8"><a class="text-primary-500 hover:text-primary-400" aria-label="Back to the home" href>← Back to
+                        the home</a></div></footer></div></div></article></main>
+
+        <footer><div class="mt-16 flex flex-col items-center"><div class="mb-3 flex space-x-4"><a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/BlazorStaticMinimalBlog"><span class="sr-only">github</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a>
+                    <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://x.com/"><span class="sr-only">x</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path></svg></a></div>
+                <div class="mb-2 flex space-x-2 text-sm text-gray-400"><a target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/BlazorStatic"> Built with Blazor Static</a>
+                    <div>•</div>
+                    <div>© 2026</div></div></div></footer></div></div>
+        <blazor-focus-on-navigate selector="h1"></blazor-focus-on-navigate></body></html>
