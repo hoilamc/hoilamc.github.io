@@ -368,3 +368,8 @@ FodyWeavers.xsd
 TestProject/
 
 .DS_Store
+
+.claude
+
+# BlazorStatic generated site (built and deployed by CI)
+output/
