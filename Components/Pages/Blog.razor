@@ -9,10 +9,10 @@
 @* No filename -> show latest posts *@
 @if (string.IsNullOrWhiteSpace(FileName))
 {
-    <div class="divide-y divide-gray-700">
+    <div>
         <div class="space-y-2 pb-8 pt-6 md:space-y-5">
             <H1>Latest</H1>
-            <p class="text-lg leading-7 text-gray-400 prose prose-invert">@WebsiteKeys.BlogLead</p>
+            <p class="font-garamond text-2xl italic leading-8 text-gray-300">@WebsiteKeys.BlogLead</p>
         </div>
 
         <PostsList />
@@ -52,12 +52,12 @@
                                     @if (!string.IsNullOrWhiteSpace(author.Name))
                                     {
                                         <dt class="sr-only">Name</dt>
-                                        <dd class="text-gray-900 dark:text-gray-100 flex gap-1 items-center">
+                                        <dd class="text-gray-100 flex gap-1 items-center">
                                             @author.Name
                                             @if (!string.IsNullOrWhiteSpace(author.XUserName))
                                             {
                                                 <a target="_blank" rel="noopener noreferrer" href="https://x.com/@author.XUserName"
-                                                    class="flex gap-1 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                                                    class="flex gap-1 text-primary-300 hover:text-primary-200">
                                                     <Svg SizeClasses="w-4 h-4" Icon="Svg.Icons.X" />
                                                 </a>
                                             }
@@ -65,7 +65,7 @@
                                             {
                                                 <a target="_blank" rel="noopener noreferrer"
                                                     href="https://github.com/@author.GitHubUserName"
-                                                    class="flex gap-1 items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                                                    class="flex gap-1 items-center text-primary-300 hover:text-primary-200">
                                                     <Svg SizeClasses="w-4 h-4" Icon="Svg.Icons.Github" />
                                                 </a>
                                             }
@@ -83,7 +83,7 @@
                 </div>
                 <div class="pb-6 pt-6 text-sm text-gray-300">
                     <a target="_blank" rel="noopener noreferrer"
-                        href="@($"{WebsiteKeys.BlogPostStorageAddress}/{FileName}")">View on GitHub</a>
+                        href="@($"{WebsiteKeys.BlogPostStorageAddress}/{FileName}.md")">View on GitHub</a>
                 </div>
             </div>
             <footer>

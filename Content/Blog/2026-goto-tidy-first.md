@@ -1,7 +1,7 @@
 ---
 title: Tidy First? Workshop Notes
 lead: Shipping under money pressure while keeping the future open — my learning notes from Kent Beck’s "Tidy First" workshop at GOTO 2026.
-published: 2026-10-01
+published: 2026-10-21
 tags: [tidy-first, kent-beck, goto-2026, software-design, refactoring, testing, agile, ai]
 authors:
     - name: "Lily Chan"
