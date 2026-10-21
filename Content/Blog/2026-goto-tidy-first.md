@@ -56,53 +56,83 @@ The future we strive for provides *optionality*: keeping our future choices open
 
 ## Where does the cost hide?
 
-So what's so hard at increasing our future? Here we need to understand what's costing most of our efforts and time -- things that are *expensive* to change, and how do we spot them -- coupling and cohesion.
+So what makes it hard to grow our futures? We need to understand what costs us the most effort and time: the things that are *expensive* to change. Kent gives us two lenses for spotting them, coupling and cohesion.
 
 ### Coupling
 
-= Propagation of Change
-I.e. Dependency when a change occurs.
+Coupling is the *propagation of change*, i.e. the dependencies that show up when a change occurs.
 
 “When I change this, what other things need to be changed too?”
 
-⚠ The “Change” event is required to trigger the propagation.
-💰 Because it only cost you when you make the change.
-
-Larger size of change === larger cost of change === coupling seriousness.
+In the diagram below, changing the orange node forces changes in the yellow ones. The black nodes aren't affected by this particular change, so they cost us nothing here.
 
 ![Tree of nodes joined by arrows, labelled "Arrows: Coupling". Changing the orange node propagates along yellow arrows to the three nodes that depend on it; the black nodes are unaffected.](media/coupling-arrows.png)
 
-In Math formula, it will be COUPLE(E1, E2, Delta)
+A couple of things to note:
 
-💡 Is our test too coupled right now? Or can we investigate with Graphify?
+- ⚠ Coupling needs a **change** to trigger the propagation. Two pieces of code can be tangled together, but if we never touch them, nothing propagates.
+- 💰 That's why it only costs us when we make the change. Larger size of change === larger cost of change === coupling seriousness.
 
-### Conditions are power-law distributed
+In math formula, it will be COUPLE(E1, E2, Δ): E1 and E2 are coupled with respect to a change Δ if changing E1 by Δ forces us to change E2.
 
-This concept exists in code: 貧者越貧，富者越富。A condition on the far right are like the top of a tree — many conditions go through there first. Whilst those on the top are like special cases. One needs to pass through many conditions in order to reach there. BUT that doesn’t mean they’re not important!
+<!-- TODO: verify the COUPLE definition against Kent's wording -->
+
+> **💡 Opportunity for a workshop:** Is our test too coupled right now? Can we investigate with [Graphify](https://github.com/Graphify-Labs/graphify)?
+
+#### Find your espresso: where to spend effort first
+
+This is my personal summary after digesting what Kent shared on this topic: "espresso" is the kind of element that decides the quality of the drink built on top of it. Just like how we have some conditions in our code that need extra attention to ensure the overall quality and maintainability.
+
+Think of a café menu as code. Each drink's recipe is full of little `if`s: *if it has coffee, pull an espresso shot*, *if it's pumpkin spice, add the syrup*. The drinks are the places in our code, and each of these yes/no questions is a condition. Whatever you order, the barista almost always asks "does it need espresso?" first, so espresso sits at the top of the tree and most drinks depend on it:
+
+![Dependency tree with espresso at the top, pointing to americano, cortado, latte and cappuccino. Latte in turn points to dirty chai and pumpkin spice latte.](media/espresso-dependency-tree.png)
+
+This is coupling again. If we change the espresso (say, new beans), every drink that uses it changes too. That's the propagation of change, so the espresso is where a change (or a mistake) costs us the most. The "is it pumpkin spice?" check is the opposite: only one drink has it, so changing it affects just that drink.
+
+So coupling isn't spread evenly across a codebase, and we don't need to treat every line equally. A few elements carry most of the weight.
+
+#### The power law behind it
+
+In code, Kent observed that conditions (`if ...`) are power-law distributed: one condition is used more than any other (like the espresso), a couple are used about half as much, and so on, until there's a long tail of conditions used only once.
+
+On the chart below:
+
+- **x-axis (Appearances):** how many times a condition shows up in the code.
+- **y-axis (Count):** how many *different* conditions show up that many times.
+
+So each dot is a group of conditions with the same number of appearances. Top left is a huge crowd of special cases used once; far right is a single condition used over and over.
 
 ![Log-log scatter plot titled "Conditions by Appearance": a few conditions appear many times, while the vast majority appear only once, following a power-law distribution.](media/conditions-by-appearance.jpg)
 
 Source: <https://medium.com/@kentbeck_7670/conditions-are-power-law-distributed-an-example-61fa4e0d3500>
 
-Or, with the coffee analogy from the workshop:
+Now map the menu back to the chart. Each check is a condition, and each drink that has it is one appearance:
 
-![The same "Conditions by Appearance" plot annotated with coffee orders: "pumpkin spice maple syrup macchiato with oat milk" is a one-off at the top left, while "espresso" is the single most frequent condition at the far right.](media/conditions-by-appearance-espresso.png)
+- **"Needs espresso?":** there's only one espresso check (or a few, in a specialty café), so y (count) is 1. But it appears in drink after drink, so x (appearances) is huge. It's the lone dot on the far right.
+- **Flavour checks ("needs pumpkin spice?", "needs caramel syrup?"...):** each appears in just one drink, so x is 1. A menu is full of checks like these, so lots of different conditions land on x = 1, and that's why the dot is way up at the top left.
 
-Key takeaways:
+![The same "Conditions by Appearance" plot annotated with café checks: "flavour checks" such as "needs pumpkin spice?" or "needs caramel syrup?" sit at the top left, each appearing in only one drink but with loads of them, while "needs espresso?" is the lone dot at the far right, appearing in nearly every drink.](media/conditions-by-appearance-espresso.png)
 
-- Consolidation candidates / reduce duplication (Where’s our “espresso”? Air pressure, how many grams…)
-- Test prioritization: “Which logic, if broken, breaks the most places” it’s like if the espresso is not good, then the latte won’t be good too :( (opinionated)
-- 🤖 What’s the espresso for AI? What’s a micro-structure that AI adopt when writing code? E.g.: comments and tests it generates — are they duplicates?
+#### What we can do with this
+
+- **Test the espresso harder.** Ask: "Which logic, if broken, breaks the most places?" If the espresso is not good, the latte won't be good either :( The conditions at the bottom right of the chart are the candidates for the heaviest testing. (opinionated)
+- **Consolidate the espresso.** The popular conditions are where duplication hurts most, so they're the best candidates to pull into one place. Where's our "espresso"? Once you find the right air pressure and weight for a type of bean, you'll stick with that configuration consistently.
+- **Don't ignore the one-offs.** They're cheap to change, but that doesn't mean they're not important. When it's in season, the pumpkin spice latte is a highlight of the menu and deserves attention too.
+- 🤖 **Teach AI on how to spot them.** What's a micro-structure that helps AI recognize repeated patterns when writing tests and generating comments?
 
 ### Cohesiveness
 
-So the previous one (coupling) is about consolidating separate functions into one. This one is about putting things of the same / similar context into the same place — the same plugin, folder, or even file.
+Coupling tells us *what changes together*. Cohesiveness is what we do about it: put things of the same / similar context into the same place — the same plugin, folder, or even file.
 
 Why? Because when we need to change, there’s less risk that we forget to change other related things.
 
-ContextProvider lol
+Here's an example with a ContextProvider:
 
 ![Two dependency trees for updating a field value. Left: changing the field in the side panel propagates through the side panel and overview tab down to Card A's updated value. Right: both the change and the update go through a shared ContextProvider instead.](media/cohesion-context-provider.png)
+
+On the left, when we change a field value in the side panel, the change has to travel up through the overview tab and back down to Card A to update the value it shows. Every hop in between is a place where we could forget something. On the right, both the change and the update go through a shared ContextProvider, so the related logic lives in one place.
+
+<!-- TODO: add a real example from my own work? -->
 
 ### Beneficial Relationships (BRE)
 
