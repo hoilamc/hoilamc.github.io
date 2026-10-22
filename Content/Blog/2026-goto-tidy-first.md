@@ -16,10 +16,10 @@ So the question I took away from Kent Beck’s "Tidy First" workshop at GOTO 202
 
 The notes below go in this order:
 
-1. [What are we balancing?](#what-are-we-balancing): features vs. futures, and what it takes for software to survive
-2. [How do we strike the balance?](#how-do-we-strike-the-balance): small habits, and when to wait
-3. [Where does the cost hide?](#where-does-the-cost-hide): coupling and cohesion, to spot what’s worth tidying
-4. A few shorter topics from the afternoon vote: BRE, design patterns, parallel migration, tests, growing software and XP
+1. [What are we balancing?](/blog/2026-goto-tidy-first#what-are-we-balancing): features vs. futures, and what it takes for software to survive
+2. [How do we strike the balance?](/blog/2026-goto-tidy-first#how-do-we-strike-the-balance): small habits, and when to wait
+3. [Where does the cost hide?](/blog/2026-goto-tidy-first#where-does-the-cost-hide): coupling and cohesion, to spot what’s worth tidying
+4. [A few shorter topics from the afternoon vote](/blog/2026-goto-tidy-first#quick-notes): BRE, design patterns, parallel migration, tests, growing software and XP
 
 🤖 marks the places where I tried to connect things to AI. They’re spread through the post, next to the ideas they relate to.
 
