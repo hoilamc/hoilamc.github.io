@@ -10,56 +10,33 @@ authors:
 
 I find myself looking at flip phones whenever I visit an electronics shop. It's probably a good way to eliminate any chance of doom-scrolling. Or maybe I could make my own [Totally Spies Compowder](https://totallyspies.fandom.com/wiki/Compowder) (credit: [@sisiamara on Instagram](https://www.instagram.com/reel/DaYY8gaxMUW/)), which my inner child screams YES to.
 
-"But Lily, you work in tech! You should be more tech-savvy and futuristic, not going backward," says a voice somewhere in my brain. But I just don't feel like it 😔. This conflict creates a self-doubting cycle and worries me a bit, so I start asking around to see what people think.
+"But Lily, you work in tech! You should be more tech-savvy and futuristic, not going backward," says a voice somewhere in my brain. But I just don't feel like it. This conflict creates a self-doubting cycle and worries me a bit, so I start asking around to see what people think.
 
 Turns out I'm not alone! In fact, everyone seems to be doing something similar already. People use film cameras instead of their phones, play vinyl records instead of streaming, journal in actual notebooks, and read actual books instead of e-books. Does this sound like you, too?
 
-There seems to be a trend where we crave tangible experiences besides our mobile devices. After some research, I believe it has less about nostalgia and more about taking back our agency over what we’re exposed to.
+There seems to be a trend where we crave tangible experiences over our mobile devices.
+A neighbour told me her love for Nintendo because pressing buttons just feels different from tabbing on screens.
+I totally agree -- sometimes I get so into my head, so being able to _touch_ and _interact_ with tangible materials becomes **the first step** to keeping me in the present.
+  
+Notice how I say it's "the first step". I think our senses are our doors to the world. But what kind of world are we interacting with? Is it the one where you need to find your daughter in a city full of monsters? Or the one full of galmorous stories from people you merely know, who just had a boat trip somewhere sunny and beautiful?
 
-===
+Engaging with tangible hobbies brings me to the present because it forces me to interact with my surroundings. It's like for vinyl enthusiasts, other than the music itself, it's also about where they found the vinyl record, why they chose certain music, and who they share the story with while listening to the music together. These are all unique and personal experiences that is different from playing on a music streaming platform, and it gives you reasons to visit places and talk to people other than staying alone in your own room with a mobile device.
 
-## Our senses
+Why are people going back in time? Are we repelling the advancement of technology? I personally think it might be the opposite. It has less about nostalgia and more about taking back our agency over what world we're living in.
 
-"What's in my analog bag?" is trending these days, although I might not be fully analog with a Tamagotchi and a Nintendo DS. A neighbour told me she loves playing on a game console because pressing buttons just feels different from tabbing on screens. It makes sense, as buttons are textured while phones are usually a flat surface.
+As Peter, the founder of a psychological social enterprise TreeholeHK, once said on an interview about the trend of confiding to AI, “I think people are fundamentally social creatures. AI can never really replace the connection between people. Relying too much on AI in place of real relationships can actually leave you feeling even lonelier.”
+This hits me to heart -- as we get more information and ideas from our mobile devices, we are getting less from our surroundings and people around us. Remember the scene from Wall-E where humans are sitting on chairs staring at screens? Using "old technologies" again for me is an attempt to reconnect to the real world around me, right here, right now.
 
-Being able to _touch_ and _interact_ with tangible materials reminds me where I am: the reality. Sometimes I get so into my head, so the smell and texture of papers remind me which world
+It's like photography. Aperture is the size of a hole deciding how much light is captured. You don't always need the max aperture size, and a good picture consist of a good balance with other settings too. And the key to taking a good picture is to notice your surroundings. Being able to access all information around the world is not always the best, and life is not just about accessing information. Sometimes less is more.
 
-connects us more to the virtual world behind the screens. It's not just a matter of usability, but also a bridge between the physical and virtual world.
-
-It may be similar with books. The texture of the paper, the sound of a page turning and the smell of the book are irreplaceable by mobile devices.
-
----
-
-It reminds me of a recent viral trend, "What's in my analog bag?" For my case, though, "tangible" might be a better word than "analog". When I talked about this with a neighbour, she told me she loves to play on a game console because pressing on buttons just feels good. That's probably why I got my Tamagotchi, too. Being able to _touch_ and interact with objects in real life feels different from tapping and sliding on a flat screen, even though they are digital objects.
-
-It may be similar with books. The texture of the papers, the sound when I flip a page, and the smell of the books are irreplacable by mobile devices.
+With this reflection in mind, I feel less guilty about not being tech-savvy all the time. Creating my Totally Spies Compowder might be a great idea. How about you? What are you going to do next?
 
 ---
 
-Vinyl is the same story. Picking a record in a store, placing it on the turntable and lowering the needle is a ritual that streaming doesn't have. Ownership plays a part as well. Some people say that's part of the appeal: a record on your shelf can't be edited or pulled from a platform at any point in the future.
+Appendix
 
----
+新聞透視
 
-Why are people going back in time? Are we repelling the advancement of technology? I personally think it might be the opposite
+我哋絕對唔希望有一啲用戶同我哋講 你哋個AI好正，我日日同佢傾偈，真人都唔洗見啦。 我覺得如果有人咁同我講，我會視為一個好失敗嘅comment。
 
-What if there's an aperture setting for our brain? How conscious are we at adjusting it?
-
-I think the recent trend of going analog is an experiment to the "aperture setting" of our brain.
-
-## What is aperture?
-
-In short, "aperture" is a hole controlling the amount of light entering the camera. The bigger the hole is, the blurrer the background; the smaller the hole is, the clearer the background.
-
-![aperture explained](image.png)
-
-Source: [PhotographyLife | What is aperture in photography](https://photographylife.com/what-is-aperture-in-photography)
-
-It is tricky to adjust, because it also affects brightness. Taking a good picture requires experimenting and finding the right balance.
-
-## What is "going analog"?
-
-I notice myself
-
-We see from media videos like "What's in my analog bag"
-
-Sometimes, I feel our mobile devices are turning the aperture setting to max all the time.
+"我覺得人本身係一個好社交嘅動物。AI始終冇辦法取代人與人之間嘅connection。過分依賴AI取代人際關係反而會令人變得更加孤獨。"
