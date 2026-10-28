@@ -27,7 +27,7 @@ As Peter, the founder of a psychological social enterprise TreeholeHK, once said
 
 > I think people are fundamentally social creatures. AI can never really replace the connection between people. Relying too much on AI in place of real relationships can actually leave you feeling even lonelier.
 
-This hits me in the heart — as we get more information and ideas from our mobile devices, we are getting less from the world around us. Remember the scene from WALL-E where humans are sitting on chairs staring at screens? For me, using "old technologies" again is an attempt to reconnect with the real world around me, right here, right now.
+This hits me in the heart — as we get more information and ideas from our mobile devices, we are getting less from the world around us. Remember the scene from WALL-E where humans are sitting on chairs staring at screens? For me, using "old technologies" again is an attempt to reconnect with the real world around me, right here, right now. I don't want to end up like those people in the movie.
 
 It's like photography. Aperture is the size of the hole that decides how much light is captured. You don't always need the max aperture size, and a good picture consists of a good balance with other settings, too. And the key to taking a good picture is _to notice your surroundings_. Being able to access all information around the world is not always the best, and life is not just about accessing information. Sometimes less is more.
 
@@ -42,7 +42,7 @@ With this reflection in mind, I feel less guilty about not being tech-savvy all 
   - "我哋絕對唔希望有一啲用戶同我哋講 你哋個AI好正，我日日同佢傾偈，真人都唔洗見啦。 我覺得如果有人咁同我講，我會視為一個好失敗嘅comment。"
   - "我覺得人本身係一個好社交嘅動物。AI始終冇辦法取代人與人之間嘅connection。過分依賴AI取代人際關係反而會令人變得更加孤獨。"
 
-- My neighbour Anastasia shared a nice playlist with me about the trend: [Analog video essays Playlist](https://youtube.com/playlist?list=PLRO4nBKF3crA&si=RLC1flxAZs1-x-gf)
+- My neighbour shared a nice playlist with me about the trend: [Analog video essays Playlist](https://youtube.com/playlist?list=PLRO4nBKF3crA&si=RLC1flxAZs1-x-gf)
   - My favourite video: [Genuine Curiosity | Why Young People Love Old Things](https://youtu.be/0dEJiQnotR8?si=jFRM4OIumKtpNkoB)
 
     ![YouTube comment by @anonimkid5311 with 15k likes: "90's: internet is an escape from reality. 2020: reality is an escape from the internet."](media/internet-escape-comment.png)
