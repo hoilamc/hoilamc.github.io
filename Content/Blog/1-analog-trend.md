@@ -11,14 +11,13 @@ authors:
 I find myself looking at flip phones whenever I visit an electronics shop. It's probably a good way to eliminate any chance of doom-scrolling. Or maybe I could make my own [Totally Spies Compowder](https://totallyspies.fandom.com/wiki/Compowder) (credit: [@sisiamara on Instagram](https://www.instagram.com/reel/DaYY8gaxMUW/)), which my inner child screams YES to.
 
 "But Lily, you work in tech! You should be more tech-savvy and futuristic, not going backward," says a voice somewhere in my brain. But I just don't feel like it. This conflict creates a self-doubting cycle and worries me a bit, so I start asking around to see what people think.
-
 Turns out I'm not alone! In fact, everyone seems to be doing something similar already. People use film cameras instead of their phones, play vinyl records instead of streaming, journal in actual notebooks, and read physical books instead of e-books. Does this sound like you, too?
 
 There seems to be a trend where we crave tangible experiences over our mobile devices.
 A neighbour told me about her love for Nintendo because pressing buttons just feels different from tapping on screens.
-I totally agree. Sometimes I get too into my head, so being able to _touch_ and _interact_ with tangible materials becomes **the first step** to keeping me in the present.
+I totally agree. Sometimes I get too into my head, so being able to _touch_ and _interact_ with tangible materials becomes **the first step** to keeping me in the present. Our senses are our doors to the world.
 
-Our senses are our doors to the world. But what kind of world are we interacting with? Is it the one where you need to find your daughter in a city full of monsters? Or the one full of glamorous stories from people you merely know, who just had a boat trip somewhere sunny and beautiful?
+But what kind of world are we interacting with? Is it the one where you need to find your daughter in a city full of monsters? Or the one full of glamorous stories from people you merely know, who just had a boat trip somewhere sunny and beautiful?
 
 Engaging with tangible hobbies brings me to the present because it forces me to interact with my surroundings. Other than the music itself, for vinyl enthusiasts it's also about where they found the vinyl record, why they chose certain music, and who they share the story with while listening to the music together. These are all unique and personal experiences that are different from playing on a music streaming platform, and they give you reasons to visit places and talk to people instead of staying alone in your own room with a mobile device.
 
@@ -28,11 +27,11 @@ As Peter, the founder of a psychological social enterprise TreeholeHK, once said
 
 > I think people are fundamentally social creatures. AI can never really replace the connection between people. Relying too much on AI in place of real relationships can actually leave you feeling even lonelier.
 
-This hits me in the heart -- as we get more information and ideas from our mobile devices, we are getting less from the world around us. Remember the scene from WALL-E where humans are sitting on chairs staring at screens? For me, using "old technologies" again is an attempt to reconnect with the real world around me, right here, right now.
+This hits me in the heart — as we get more information and ideas from our mobile devices, we are getting less from the world around us. Remember the scene from WALL-E where humans are sitting on chairs staring at screens? For me, using "old technologies" again is an attempt to reconnect with the real world around me, right here, right now.
 
 It's like photography. Aperture is the size of the hole that decides how much light is captured. You don't always need the max aperture size, and a good picture consists of a good balance with other settings, too. And the key to taking a good picture is _to notice your surroundings_. Being able to access all information around the world is not always the best, and life is not just about accessing information. Sometimes less is more.
 
-With this reflection in mind, I feel less guilty about not being tech-savvy all the time. Creating my Totally Spies Compowder might be a great idea, and I'd put in something that organises my ideas and thoughts (inspired by Laura Fehre from Figma, whom I heard speak at TechFest 2026, our internal conference). Now I'm curious. How do you stay grounded?
+With this reflection in mind, I feel less guilty about not being tech-savvy all the time. Creating my Totally Spies Compowder might be a great idea: I'd keep it to the essentials so I'm not tempted to reach for content. Now I'm curious — how do you stay grounded?
 
 ---
 
