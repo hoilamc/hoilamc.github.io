@@ -42,7 +42,7 @@ With this reflection in mind, I feel less guilty about not being tech-savvy all 
   - "我哋絕對唔希望有一啲用戶同我哋講 你哋個AI好正，我日日同佢傾偈，真人都唔洗見啦。 我覺得如果有人咁同我講，我會視為一個好失敗嘅comment。"
   - "我覺得人本身係一個好社交嘅動物。AI始終冇辦法取代人與人之間嘅connection。過分依賴AI取代人際關係反而會令人變得更加孤獨。"
 
-- A playlist about the trend from [Anastasia](https://www.linkedin.com/in/anastasia-eginoglou/): [Analog video essays Playlist](https://youtube.com/playlist?list=PLRO4nBKF3crA&si=RLC1flxAZs1-x-gf)
+- A playlist from [Anastasia](https://www.linkedin.com/in/anastasia-eginoglou/) that inspires lots of arguments here: [Analog video essays Playlist](https://youtube.com/playlist?list=PLRO4nBKF3crA&si=RLC1flxAZs1-x-gf)
   - My favourite video: [Genuine Curiosity | Why Young People Love Old Things](https://youtu.be/0dEJiQnotR8?si=jFRM4OIumKtpNkoB)
 
     ![YouTube comment by @anonimkid5311 with 15k likes: "90's: internet is an escape from reality. 2020: reality is an escape from the internet."](media/internet-escape-comment.png)
